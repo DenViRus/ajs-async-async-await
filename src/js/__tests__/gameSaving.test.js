@@ -1,7 +1,6 @@
 import { GameSavingLoader, read } from "../app.js";
 
 test("check savingLoader", async () => {
-  GameSavingLoader.method(read);
   const received = await GameSavingLoader.load();
 
   const expected = {
